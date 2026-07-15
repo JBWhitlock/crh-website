@@ -1,7 +1,9 @@
 import React from "react";
+import "./tanglewood-additions.css";
 
 const PHONE = "803-442-0488";
 const EMAIL = "info@cornerstonerecoveryllc.com";
+const APPLICATION_URL = "https://forms.office.com/Pages/ResponsePage.aspx?id=9emI_hPH90WMZzSgFaBRziffIGIq9dJAuMemZwJ93qlUQTFNV0hWTUc4WVA1OTlPRVdHNDU3WkJZNC4u&origin=QRCode";
 
 const ownerBenefits = [
   {
@@ -81,14 +83,20 @@ export default function CRHWebsite() {
 
           <nav className="main-nav" aria-label="Main navigation">
             <a href="#home">Home</a>
+            <a href="#residents">Residents</a>
             <a href="#owners">Property Owners</a>
             <a href="#model">Housing Model</a>
             <a href="#partners">Partners</a>
             <a href="#contact">Contact</a>
           </nav>
 
-          <a className="header-cta" href="#contact">
-            Partner With Us
+          <a
+            className="header-cta"
+            href={APPLICATION_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Apply Now
           </a>
         </div>
       </header>
@@ -101,11 +109,9 @@ export default function CRHWebsite() {
             <div className="eyebrow">Structured Recovery Housing for the CSRA</div>
 
             <h1>
-              <span className="headline-white">Guaranteed</span>
-              <span className="headline-white">Corporate Lease.</span>
-              <span className="headline-gold">Stable Income.</span>
-              <span className="headline-white">Professionally</span>
-              <span className="headline-white">Managed Home.</span>
+              <span className="headline-white">A Safe Place.</span>
+              <span className="headline-gold">A Strong Foundation.</span>
+              <span className="headline-white">A Better Future.</span>
             </h1>
 
             <div className="gold-rule">
@@ -115,14 +121,18 @@ export default function CRHWebsite() {
             </div>
 
             <p>
-              Cornerstone Recovery Holdings partners with property owners to provide
-              professionally managed residential housing through secure corporate leasing
-              and structured oversight.
+              Tanglewood Home provides structured transitional recovery housing focused on
+              sobriety, accountability, employment, peer support, and long-term independence.
             </p>
 
             <div className="hero-actions">
-              <a href="#contact" className="btn btn-gold">
-                Partner With Us
+              <a
+                href={APPLICATION_URL}
+                className="btn btn-gold"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Apply for Housing
               </a>
               <a href={`tel:${PHONE}`} className="btn btn-light">
                 Call {PHONE}
@@ -132,62 +142,114 @@ export default function CRHWebsite() {
             <div className="trust-strip">
               <div>
                 <IconBadge>✓</IconBadge>
-                <span>Long-Term Leases</span>
+                <span>Structured</span>
               </div>
               <div>
                 <IconBadge>✓</IconBadge>
-                <span>Professionally Managed</span>
+                <span>Supportive</span>
               </div>
               <div>
                 <IconBadge>✓</IconBadge>
-                <span>Structured Accountability</span>
+                <span>Sobriety Focused</span>
               </div>
             </div>
           </div>
 
-          <aside className="hero-panel" aria-label="Corporate lease summary">
-            <div className="panel-topline">
-              <span>Operating Focus</span>
-              <strong>CSRA</strong>
-            </div>
+          <aside className="hero-panel flyer-panel" aria-label="Tanglewood Home flyer">
+            <a
+              href="/tanglewood-home-flyer.png"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open the Tanglewood Home flyer"
+            >
+              <img
+                src="/tanglewood-home-flyer.png"
+                alt="Tanglewood Home recovery housing flyer"
+                className="flyer-image"
+              />
+            </a>
 
-            <h2>We Are the Tenant — Not the Residents.</h2>
-
-            <p>
-              You lease to our LLC. We manage everything inside with clear standards,
-              accountability, and active oversight.
-            </p>
-
-            <div className="panel-grid">
-              <div>
-                <span>Lease</span>
-                <strong>Corporate</strong>
-              </div>
-              <div>
-                <span>Term</span>
-                <strong>12–24+ Months</strong>
-              </div>
-              <div>
-                <span>Oversight</span>
-                <strong>Active</strong>
-              </div>
-              <div>
-                <span>Policy</span>
-                <strong>Zero Tolerance</strong>
-              </div>
-            </div>
-
-            <div className="flow-card">
-              <span>Core Flow</span>
-              <div>
-                <strong>Lease</strong>
-                <b>→</b>
-                <strong>Structure</strong>
-                <b>→</b>
-                <strong>Stability</strong>
-              </div>
+            <div className="flyer-actions">
+              <a
+                className="btn btn-gold"
+                href={APPLICATION_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Apply Online
+              </a>
+              <a className="btn btn-light" href={`tel:${PHONE}`}>
+                Call {PHONE}
+              </a>
             </div>
           </aside>
+        </div>
+      </section>
+
+      <section id="residents" className="resident-section">
+        <div className="section-heading">
+          <span />
+          <h2>Now Accepting Resident Applications</h2>
+          <span />
+        </div>
+
+        <p className="resident-intro">
+          Tanglewood Home offers a clean, structured, and supportive environment for people
+          committed to recovery and a more stable future. Complete the short pre-screening
+          application to request an interview.
+        </p>
+
+        <div className="resident-layout">
+          <a
+            className="resident-flyer-link"
+            href="/tanglewood-home-flyer.png"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/tanglewood-home-flyer.png"
+              className="resident-flyer"
+              alt="Tanglewood Home flyer with application QR code"
+            />
+          </a>
+
+          <div className="resident-details">
+            <div className="eyebrow dark">Tanglewood Home</div>
+            <h3>Take the Next Step</h3>
+            <p>
+              The pre-screening form takes only a few minutes. Submission does not guarantee
+              placement; qualified applicants will be contacted to schedule an interview.
+            </p>
+
+            <ul>
+              <li>Rates starting at $750 per month</li>
+              <li>Weekly house meetings and random drug testing</li>
+              <li>Job coaching and employment support</li>
+              <li>Recovery mentorship and accountability</li>
+              <li>Transportation assistance and resource coordination</li>
+            </ul>
+
+            <div className="resident-actions">
+              <a
+                className="btn btn-gold"
+                href={APPLICATION_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Start Application
+              </a>
+              <a className="btn btn-dark" href={`tel:${PHONE}`}>
+                Call {PHONE}
+              </a>
+              <a
+                className="btn btn-download"
+                href="/tanglewood-home-flyer.png"
+                download
+              >
+                Download Flyer
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 

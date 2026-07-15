@@ -1,0 +1,159 @@
+/* Tanglewood Home resident-application additions.
+   Imported by CRHWebsite.jsx after the existing src/styles.css import in main.jsx. */
+
+.flyer-panel {
+  margin-top: 0;
+  border-color: rgba(255, 255, 255, 0.5);
+  background: white;
+  padding: 16px;
+}
+
+.flyer-image {
+  display: block;
+  width: 100%;
+  max-height: 720px;
+  border-radius: 14px;
+  object-fit: contain;
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.28);
+}
+
+.flyer-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.resident-section {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 78px 28px;
+}
+
+.resident-intro {
+  max-width: 820px;
+  margin: -12px auto 42px;
+  color: #243041;
+  font-size: 18px;
+  line-height: 1.65;
+  text-align: center;
+}
+
+.resident-layout {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.78fr) minmax(0, 1fr);
+  gap: 54px;
+  align-items: center;
+}
+
+.resident-flyer-link {
+  display: block;
+}
+
+.resident-flyer {
+  display: block;
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 28px 70px rgba(7, 27, 52, 0.2);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.resident-flyer:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 34px 80px rgba(7, 27, 52, 0.25);
+}
+
+.resident-details h3 {
+  margin: 18px 0 16px;
+  color: var(--navy);
+  font-size: clamp(34px, 4.8vw, 58px);
+  font-weight: 1000;
+  letter-spacing: -0.045em;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.resident-details > p {
+  color: #243041;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.resident-details ul {
+  display: grid;
+  gap: 13px;
+  margin: 28px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.resident-details li {
+  position: relative;
+  padding-left: 32px;
+  color: var(--navy);
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.resident-details li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  width: 22px;
+  height: 22px;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--gold);
+  color: white;
+  content: "✓";
+  font-size: 12px;
+  font-weight: 1000;
+}
+
+.resident-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn-dark {
+  background: var(--navy);
+  color: white;
+}
+
+.btn-download {
+  border-color: rgba(7, 27, 52, 0.25);
+  background: white;
+  color: var(--navy);
+}
+
+@media (max-width: 1100px) {
+  .resident-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .resident-flyer {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 720px) {
+  .resident-section {
+    padding: 60px 18px;
+  }
+
+  .flyer-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .resident-actions {
+    display: grid;
+  }
+
+  .resident-actions .btn {
+    width: 100%;
+  }
+}
