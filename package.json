@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "build": "vite build",
-    "preview": "vite preview --host 127.0.0.1"
+    "preview": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
@@ -16,9 +17,11 @@
     "vite": "latest"
   },
   "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.45.0",
     "@tailwindcss/postcss": "^4.3.0",
     "autoprefixer": "latest",
     "postcss": "latest",
-    "tailwindcss": "latest"
+    "tailwindcss": "latest",
+    "wrangler": "^4.111.0"
   }
 }
