@@ -1,7 +1,7 @@
 import React from "react";
 import "./tanglewood-additions.css";
 
-const PHONE = "803-442-0488";
+const PHONE = "803-292-8400";
 const EMAIL = "info@cornerstonerecoveryllc.com";
 const APPLICATION_URL = "https://forms.office.com/Pages/ResponsePage.aspx?id=9emI_hPH90WMZzSgFaBRziffIGIq9dJAuMemZwJ93qlUQTFNV0hWTUc4WVA1OTlPRVdHNDU3WkJZNC4u&origin=QRCode";
 
