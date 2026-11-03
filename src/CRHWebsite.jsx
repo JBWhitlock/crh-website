@@ -157,13 +157,13 @@ export default function CRHWebsite() {
 
           <aside className="hero-panel flyer-panel" aria-label="Tanglewood Home flyer">
             <a
-              href="/tanglewood-home-flyer.png"
+              href="/tanglewood-home-flyer.png?v=20261103"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Open the Tanglewood Home flyer"
             >
               <img
-                src="/tanglewood-home-flyer.png"
+                src="/tanglewood-home-flyer.png?v=20261103"
                 alt="Tanglewood Home recovery housing flyer"
                 className="flyer-image"
               />
@@ -202,12 +202,12 @@ export default function CRHWebsite() {
         <div className="resident-layout">
           <a
             className="resident-flyer-link"
-            href="/tanglewood-home-flyer.png"
+            href="/tanglewood-home-flyer.png?v=20261103"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img
-              src="/tanglewood-home-flyer.png"
+              src="/tanglewood-home-flyer.png?v=20261103"
               className="resident-flyer"
               alt="Tanglewood Home flyer with application QR code"
             />
@@ -243,7 +243,7 @@ export default function CRHWebsite() {
               </a>
               <a
                 className="btn btn-download"
-                href="/tanglewood-home-flyer.png"
+                href="/tanglewood-home-flyer.png?v=20261103"
                 download
               >
                 Download Flyer
